@@ -14,7 +14,7 @@ const ServicesList = () => {
     //check order by email
     useEffect(() => {
 
-        fetch("http://localhost:5000/review?email=" + loggedInUser.email)
+        fetch("https://fast-ocean-98990.herokuapp.com/review?email=" + loggedInUser.email)
             .then(res => res.json())
             .then(data => {
                 setOrderService(data)

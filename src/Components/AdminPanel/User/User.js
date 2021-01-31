@@ -9,7 +9,7 @@ const User = () => {
 
     const [orderList, setOrderList] = useState([])
     useEffect(() => {
-        fetch("http://localhost:5000/getCustomerOrder")
+        fetch("https://fast-ocean-98990.herokuapp.com/getCustomerOrder")
             .then(res => res.json())
             .then(data => {
                 setOrderList(data)

@@ -14,6 +14,7 @@ import User from './Components/AdminPanel/User/User';
 import AddService from './Components/AdminPanel/AddService/AddService';
 import MakeAdmin from './Components/AdminPanel/MakeAdmin/MakeAdmin';
 import PrivateRoute from './Components/Login/PrivateRoute'
+import NotMatch from './Components/NotMatch/NotMatch';
 
 export const UserContext = createContext();
 
@@ -57,6 +58,9 @@ function App() {
                   <MakeAdmin/>
               </PrivateRoute>
           </Switch>
+          <Route paht="*">
+            <NotMatch/>
+          </Route>
         </Router>
       </UserContext.Provider>
   );

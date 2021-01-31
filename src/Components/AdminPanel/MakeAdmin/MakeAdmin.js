@@ -13,7 +13,7 @@ const MakeAdmin = () => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/addEmail', {
+        fetch('https://fast-ocean-98990.herokuapp.com/addEmail', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
